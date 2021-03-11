@@ -1,0 +1,8 @@
+
+<div class="container">
+    <img src="{{ user.avatar }}" class="card-img-top" alt="">
+    <div class="card-title">
+        {{ user.email }}
+    </div>
+    <a href="{{ path('user_contacter', {id:user.id}) }}"> Contacter le vendeur </a>
+</div>

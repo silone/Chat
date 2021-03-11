@@ -1,0 +1,12 @@
+
+    <div class="card">
+        <img src="{{ user.avatar }}" class="card-img-top" alt="">
+        <div class="card-body">
+            <div class="card-text">
+                {{ user.email }}
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primay" href="{{ path('user_profile' , {id:user.id})}}"> voir le profil</a>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+    <h1 class="card-title"> Tous nos Utilisateurs </h1>
+    <div class="container">
+        <div class="grid">
+            {% for user in user  %}
+                {{  include ("partials/_profile.html.twig")}}
+            {% endfor  %}
+        </div>
+    </div>
+{% endblock %}
